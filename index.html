@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Kovalyova</title>
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header fixed">
+	<div class="container">
+		<div class="header__content">
+
+			<a class="header__logo goto hover" data-goto=".hero" href="#" tabindex="1">
+				kovalyova
+			</a>
+
+			<div class="header__menu menu">
+				<button class="menu__burger burger" type="button" tabindex="2">
+					<span></span>
+					<span></span>
+					<span></span>
+				</button>
+
+				<nav class="menu__body fixed">
+					<span class="sr-only">Блок навигации</span>
+
+					<ul class="menu__list">
+						<li class="menu__item">
+							<a class="menu__link hover goto" data-goto=".portfolio" href="#" tabindex="3">Портфолио</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link hover goto" data-goto=".about" href="#" tabindex="4">Обо мне</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link hover goto" data-goto=".gallery" href="#" tabindex="5">Стоимость</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link hover goto" data-goto=".reviews" href="#" tabindex="6">Отзывы</a>
+						</li>
+
+						<li class="menu__item">
+							<a class="menu__link hover goto" data-goto=".contacts" href="#" tabindex="7">Контакты</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+
+			<a class="menu__phone hover dynamic-adaptive" data-da=".menu__body,992,last" href="tel:+380934457885"
+				tabindex="8">
+				+380(93)445-78-85
+			</a>
+		</div>
+	</div>
+</header>
+		<main class="page">
+			<section class="hero" id="hero">
+	<div class="swiper-container">
+		<div class="hero__swiper swiper-hero">
+			<ul class="swiper-hero__wrapper">
+				<li class="swiper-hero__slide hero-slide hero-slide--1"></li>
+
+				<li class="swiper-hero__slide hero-slide hero-slide--2"></li>
+
+				<li class="swiper-hero__slide hero-slide hero-slide--3"></li>
+
+				<li class="swiper-hero__slide hero-slide hero-slide--4"></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="container hero__content">
+		<div class="hero__inner">
+			<div class="hero__announcement">
+				<h1 class="sr-only">
+					Kovalyova Mary.
+					Ваш фотограф & видеограф в Одессе
+				</h1>
+				<span class="hero__owner">Kovalyova Mary</span>
+				<span class="hero__title">Ваш фотограф & видеограф в Одессе</span>
+				<button class="hero__button btn btn--white" type="button">
+					Записаться на съемку
+				</button>
+			</div>
+
+			<div class="hero__media">
+				<ul class="social-media__list social-media">
+					<li class="social-media__item">
+						<a class="social-media__link" href="#" target="blank" aria-label="Моя страница в instagram">
+							<svg class="social-media__icon">
+								<use xlink:href="img/sprite.svg#instagram"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-media__item">
+						<a class="social-media__link" href="#" target="blank" aria-label="Моя страница на pinterest">
+							<svg class="social-media__icon">
+								<use xlink:href="img/sprite.svg#pinterest"></use>
+							</svg>
+						</a>
+					</li>
+
+					<li class="social-media__item">
+						<a class="social-media__link" href="#" target="blank" aria-label="Моя страница на behance">
+							<svg class="social-media__icon">
+								<use xlink:href="img/sprite.svg#behance"></use>
+							</svg>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="swiper-hero__pagination"></div>
+		</div>
+	</div>
+
+</section>
+			<section class="portfolio">
+	<div class="container">
+		<h2 class="portfolio__title title">
+			Портфолио
+		</h2>
+
+		<div class="portfolio__wrapper">
+			<div class="portfolio__content">
+				<ul class="portfolio__list">
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_1.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Свадебная церемония</span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item portfolio__item--shift">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_2.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">За чашкой кофе</span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_3.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Выездная<span>мото съемка</span></span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_4.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Прогулка у океана</span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_5.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Фото с собакой</span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_6.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Празднование <span>Дня Рождения</span></span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_7.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Спортивная фотосессия</span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_8.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Украинская вышиванка</span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+
+					<li class="portfolio__item">
+						<a class="portfolio__link" href="#">
+							<img class="portfolio__img" src="../img/portfolio/portfolio_9.jpg" alt="Фото галлереи">
+						</a>
+						<div class="portfolio-item__hover hover-unit">
+							<span class="hover-unit__title">Love Story<span>для Евы и Дмитрия</span></span>
+							<span class="hover-unit__button">Смотреть</span>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+			<button class="portfolio__button hover active" type="button">
+				Смотреть больше
+			</button>
+		</div>
+	</div>
+</section>
+			<div class="video-blog" style="background-image: url(../img/bg/bg-video.jpg);">
+	<!-- <div class="video-blog"> -->
+	<!-- <img class="video-blog__picture" src="../img/bg/bg-video.jpg" alt="Видео блог"> -->
+	<h2 class="video-blog__title sr-only">
+		Видео блог
+	</h2>
+	<a class="video-blog__play" href="#">
+		<svg class="video-blog__icon">
+			<use xlink:href="../img/sprite.svg#play"></use>
+		</svg>
+	</a>
+</div>
+			<section class="about">
+	<div class="about__container container">
+		<div class="about__wrapper">
+
+			<div class="about__inner">
+				<h2 class="about__title title">
+					Обо мне
+				</h2>
+
+				<div class="about__content content-about">
+					<div class="content-about__image">
+						<img class="content-about__img" src="../img/about/kovalyova-mary-main.jpg"
+							alt="Photographer owner Kovalyova Mary">
+					</div>
+					<div class="content-about__description">
+						<div class="content-about__text">
+							<span class="content-about__paragraph content-about__paragraph--greeting">
+								Здравствуйте! Меня зовут Марина.
+							</span>
+
+							<span class="content-about__paragraph content-about__paragraph--first">
+								По&nbsp;профессии я&nbsp;фотохудожник, и&nbsp;фотография является огромной частью моей жизни уже более
+								8&nbsp;лет.
+							</span>
+
+							<span class="content-about__paragraph content-about__paragraph--second">
+								Для меня профессиональная фотосъемка&nbsp;&mdash; серьезная работа, сложный технический
+								процесс, который я&nbsp;превращаю для Вас в&nbsp;приятное времяпрепровождение.
+							</span>
+
+							<span class="content-about__paragraph content-about__paragraph--third">
+								Я&nbsp;всегда готова к&nbsp;сотрудничеству, готова выслушать
+								все Ваши пожелания и&nbsp;максимально воплотить их
+								на&nbsp;фотографии.
+							</span>
+						</div>
+
+						<ul class="content-about__advantages advantage">
+							<li class="advantage__item">
+								<span class="advantage__value">
+									20
+								</span>
+								<span class="advantage__option">
+									Авторских проектов
+								</span>
+							</li>
+
+							<li class="advantage__item">
+								<span class="advantage__value">
+									1000+
+								</span>
+								<span class="advantage__option">
+									Успешных съемок
+								</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+
+			<ul class="about__gallery gallery-about">
+				<li class="gallery-about__item">
+					<img class="gallery-about__img" src="../img/about/kovalyova-mary-1.jpg" alt="Ковалёва Мария с фотоаппаратом">
+				</li>
+
+				<li class="gallery-about__item">
+					<img class="gallery-about__img" src="../img/about/kovalyova-mary-2.jpg" alt="Ковалёва Мария с фотоаппаратом">
+				</li>
+
+				<li class="gallery-about__item">
+					<img class="gallery-about__img" src="../img/about/kovalyova-mary-3.jpg" alt="Ковалёва Мария с фотоаппаратом">
+				</li>
+			</ul>
+		</div>
+	</div>
+</section>
+			<section class="services">
+	<div class="container">
+		<h2 class="services__title title">
+			Стоимость студийной съемки
+		</h2>
+
+		<div class="services__content">
+			<div class="services__slider slider-services">
+				<ul class="slider-services__wrapper">
+					<li class="slider-services__slide">
+						<div class="service-cart">
+	<span class="service-cart__title">
+		Базовый
+	</span>
+	<span class="service-cart__price">
+		2000 ₴
+	</span>
+
+	<ul class="service-cart__list">
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Длительность съемки:
+			</span>
+			<span class="cart-item__value">
+				1,5 часа
+			</span>
+		</li>
+
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Исходных кадров:
+			</span>
+			<span class="cart-item__value">
+				100 шт
+			</span>
+		</li>
+
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Обработанных кадров:
+			</span>
+			<span class="cart-item__value">
+				20 шт
+			</span>
+		</li>
+	</ul>
+
+	<button class="service-cart__button btn btn--white" type="button">
+		Забронировать
+	</button>
+</div>
+					</li>
+
+					<li class="slider-services__slide">
+						<div class="service-cart">
+	<span class="service-cart__title">
+		Стандартный
+	</span>
+	<span class="service-cart__price">
+		2800 ₴
+	</span>
+
+	<ul class="service-cart__list">
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Длительность съемки:
+			</span>
+			<span class="cart-item__value">
+				2,5 часа
+			</span>
+		</li>
+
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Исходных кадров:
+			</span>
+			<span class="cart-item__value">
+				200 шт
+			</span>
+		</li>
+
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Обработанных кадров:
+			</span>
+			<span class="cart-item__value">
+				50 шт
+			</span>
+		</li>
+	</ul>
+
+	<button class="service-cart__button btn btn--white" type="button">
+		Забронировать
+	</button>
+</div>
+					</li>
+
+					<li class="slider-services__slide">
+						<div class="service-cart">
+	<span class="service-cart__title">
+		Максимальный
+	</span>
+	<span class="service-cart__price">
+		3500 ₴
+	</span>
+
+	<ul class="service-cart__list">
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Длительность съемки:
+			</span>
+			<span class="cart-item__value">
+				3,5 часа
+			</span>
+		</li>
+
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Исходных кадров:
+			</span>
+			<span class="cart-item__value">
+				350 шт
+			</span>
+		</li>
+
+		<li class="service-cart__item cart-item">
+			<span class="cart-item__name">
+				Обработанных кадров:
+			</span>
+			<span class="cart-item__value">
+				100 шт
+			</span>
+		</li>
+	</ul>
+
+	<button class="service-cart__button btn btn--white" type="button">
+		Забронировать
+	</button>
+</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+		<div class="services__bottom">
+			<p>
+				Стоимость свадебной, корпоративной, выездной фотосессии рассчитывается индивидуально*
+			</p>
+		</div>
+	</div>
+</section>
+			<section class="reviews">
+	<div class="reviews__container container">
+		<h2 class="reviews__title title">
+			Отзывы
+		</h2>
+
+		<div class="reviews__content">
+			<button class="swiper-review__arrow swiper-review__arrow--prev" type="button">
+				<svg class="swiper-review__icon">
+					<use xlink:href="img/sprite.svg#arrow-left"></use>
+				</svg>
+			</button>
+			<button class="swiper-review__arrow swiper-review__arrow--next" type="button">
+				<svg class="swiper-review__icon">
+					<use xlink:href="img/sprite.svg#arrow-right"></use>
+				</svg>
+			</button>
+
+			<div class="reviews__slider swiper-review">
+				<ul class="swiper-review__wrapper">
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/reviews/natalia_odessa.jpg" alt="customer">
+						</div>
+					</li>
+
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/reviews/natalia_odessa.jpg" alt="customer">
+						</div>
+					</li>
+
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/bg/bg-phone.jpg" alt="customer">
+						</div>
+					</li>
+
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/bg/bg-main.jpg" alt="customer">
+						</div>
+					</li>
+
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/reviews/natalia_odessa.jpg" alt="customer">
+						</div>
+					</li>
+
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/bg/bg-phone.jpg" alt="customer">
+						</div>
+					</li>
+
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/reviews/natalia_odessa.jpg" alt="customer">
+						</div>
+					</li>
+
+					<li class="swiper-review__slide slide-review">
+						<div class="slide-review__content">
+							<span class="slide-review__author slide-review__author--first">
+								Наталья, Одесса
+							</span>
+							<div class="slide-review__text">
+								<p>
+									Спасибо за&nbsp;позитивный заряд энергии, суперское настроение, которое получаешь от&nbsp;фотосьемки!
+									Было очень приятно поработать
+									с&nbsp;настоящим знатоком своего дела!!
+								</p>
+								<p>
+									Еще больших успехов тебе, новых творческих идей и&nbsp;вдохновения!!!!!
+								</p>
+							</div>
+							<span class="slide-review__author slide-review__author--last">
+								Наталья, Одесса
+							</span>
+						</div>
+						<div class="slide-review__picture">
+							<img class="slide-review__img" loading="lazy" src="../img/bg/bg-phone.jpg" alt="customer">
+						</div>
+					</li>
+				</ul>
+
+				<div class="swiper-review__pagination"></div>
+			</div>
+		</div>
+	</div>
+</section>
+			<section class="contacts" style="background-image: url(../img/bg/bg-contacts.jpg);">
+	<div class="container">
+		<h2 class="contacts__title title">
+			Контакты
+		</h2>
+		<div class="contacts__content">
+			<form class="contacts__form form" action="#">
+				<label class="form__label label">
+					<input class="form__input form__input--name" type="text" name="name" data-validate-field="name"
+						autocomplete="off" placeholder="Имя" required>
+				</label>
+
+				<label class="form__label label">
+					<input class="form__input form__input--phone" type="tel" name="tel" data-validate-field="tel"
+						autocomplete="off" placeholder="Телефон" required>
+				</label>
+
+				<label class="form__label label">
+					<input class="form__input form__input--email" type="email" name="email" data-validate-field="email"
+						autocomplete="off" placeholder="E-mail" required>
+				</label>
+
+				<label class="form__label label">
+					<textarea class="form__input form__input--text" placeholder="Ваше сообщение"></textarea>
+				</label>
+
+				<button class="form__button btn btn--white" type="submit">
+					Отправить
+				</button>
+			</form>
+		</div>
+	</div>
+</section>
+		</main>
+		<footer class="footer" id="footer">
+	<div class="container">
+		<h2 class="footer__title title">
+			Контактная информация
+		</h2>
+
+		<div class="footer__content">
+			<ul class="footer__contacts contacts-footer">
+				<li class="contacts-footer__item contacts-footer__item--phone">
+					<span class="contacts-footer__name">
+						Телефон:
+					</span>
+					<a class="contacts-footer__value hover" href="tel:+380938457712">
+						+380 (93) 845-77-12
+					</a>
+				</li>
+
+				<li class="contacts-footer__item contacts-footer__item--maile">
+					<span class="contacts-footer__name">
+						E-mail:
+					</span>
+					<a class="contacts-footer__value hover" href="mailto:kovalMary@gmail.com">
+						kovalMary@gmail.com
+					</a>
+				</li>
+
+				<li class="contacts-footer__item contacts-footer__item--address">
+					<span class="contacts-footer__name">
+						Адрес:
+					</span>
+					<address class="contacts-footer__value">
+						Украина, г.Одесса
+					</address>
+				</li>
+			</ul>
+
+			<ul class="footer__media-list social-media">
+				<li class="social-media__item">
+					<a class="social-media__link" href="#" target="blank" aria-label="Моя страница в instagram">
+						<svg class="social-media__icon">
+							<use xlink:href="img/sprite.svg#instagram"></use>
+						</svg>
+					</a>
+				</li>
+
+				<li class="social-media__item">
+					<a class="social-media__link" href="#" target="blank" aria-label="Моя страница на pinterest">
+						<svg class="social-media__icon">
+							<use xlink:href="img/sprite.svg#pinterest"></use>
+						</svg>
+					</a>
+				</li>
+
+				<li class="social-media__item">
+					<a class="social-media__link" href="#" target="blank" aria-label="Моя страница на behance">
+						<svg class="social-media__icon">
+							<use xlink:href="img/sprite.svg#behance"></use>
+						</svg>
+					</a>
+				</li>
+			</ul>
+		</div>
+
+		<span class="footer__copy">
+			&copy; 2021 KovalyovaMary
+		</span>
+	</div>
+</footer>
+	</div>
+
+	
+
+	<script src="js/app.min.js"></script>
+</body>
+
+</html>
